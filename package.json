@@ -1,0 +1,45 @@
+{
+  "name": "shopify-seo-araclari",
+  "version": "0.1.0",
+  "description": "Shopify geçişlerinde 301 yönlendirme listesi denetleyen ve ürün JSON-LD üreten saf TypeScript fonksiyonları.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "vitest": "4.1.12"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "shopify",
+    "seo",
+    "301",
+    "redirects",
+    "json-ld",
+    "schema.org",
+    "turkce"
+  ],
+  "author": "Salih Eroğul (https://saliherogul.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eroguls/shopify-seo-araclari.git"
+  }
+}
